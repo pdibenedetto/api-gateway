@@ -1,0 +1,16 @@
+spring:
+  cloud:
+    gateway:
+      globalcors:
+        cors-configurations:
+          '[/**]':
+            allowedOrigins: "http://localhost:8181"
+            allowedMethods:
+              - GET
+            allowedHeaders: "*"
+
+logging.level:
+  org:
+    springframework:
+      cloud:
+        gateway: debug
